@@ -1,0 +1,15 @@
+Desarrolle uno de los siguientes algoritmos y calcule su complejidad computacional:
+1. Dada una pila de elementos desordenados, generar una nueva pila sin elementos repetidos y ordenados.
+2. Cree un diccionario que tenga como clave cada letra del alfabeto español, y como valor cada frecuencia
+asociada. Cree una String en español de mas de 500 caracteres, y que tenga aplicado un cifrado César.
+Desarrolle un algoritmo que desencripte la String en base a la frecuencia de sus caracteres.
+3. Modifique el algoritmo de paréntesis balanceados para que, al tener uno de estos paréntesis comillas
+(por ejemplo, ’(’ o ’}’, entonces lo ignore.
+Implemente el Método de Montecarlo de la siguiente forma.
+1. Cree un TDA que represente una coordenada en el plano.
+2. Defina una región cuadrada en el primer cuadrante.
+3. Cree un TDA Montecarlo que tenga un método que reciba una coordenada y la almacene dentro de
+su estructura solo si esta presente en la región delimitada por el cuadrado.
+4. Cree un conjunto de coordenadas y agreguele elementos hasta que su cardinal sea 1000, de forma
+aleatoria.
+5. Llene la estructura Montecarlo con estos elementos y utilícelos para aproximar π.

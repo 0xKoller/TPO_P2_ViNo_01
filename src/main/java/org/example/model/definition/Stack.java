@@ -4,6 +4,7 @@ package org.example.model.definition;
  * Precondicion: para usar cualquier de estos metodos la estructura debe estar inicializada.
  */
 public interface Stack {
+
     /**
      * Postcondicion: Apila (coloca en el tope) un valor.
      *

@@ -1,0 +1,5 @@
+Investigue el patrón Builder. Modifique la estructura Set y la estructura Stack para que tengan un
+método add por medio de este patrón. Escriba otro método addAll que pertenezca al mismo builder, que
+reciba una instancia de Set y agregue todos sus elementos sin modificar la instancia de Set.
+Modifique la estructura Queue para que tenga un constructor con cantidad de parámetros variables, de
+tal forma que instancie la estructura con datos dentro

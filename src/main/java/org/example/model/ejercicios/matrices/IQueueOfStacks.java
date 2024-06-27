@@ -1,5 +1,8 @@
 package org.example.model.ejercicios.matrices;
 
+import org.example.model.definition.Queue;
+import org.example.model.definition.Stack;
+
 public interface IQueueOfStacks {
 
     /**

@@ -1,0 +1,14 @@
+General Hola a todos. Dado que el mismo día que veíamos grafos era la entrega del TPO, decidí quitar grafos del TPO. Los enunciados quedarán como siguen (lo pongo acá, no voy a editar el PDF de la consigna):
+Original:
+5. Grafo aleatorio: Cada arista en lugar de tener un peso tiene asociada una probabilidad.
+Se cambia por:
+5. Dicccionario aleatorio: Es un diccionario múltiple que al obtener pedir un elemento a partir de una clave, devuelve aleatoriamente alguno de sus valores.
+Original:
+2.7. Ejercicio 7: Grafos
+Desarrollar una función que reciba un grafo dirigido, y devuelva un conjunto de grafos dirigidos tales que,
+cada uno de estos grafos, es fuertemente conexo. Explique que sucede si el grafo de entrada no es dirigido.
+Se cambia por:
+2.7. Ejercicio 7: Colas con prioridad
+Desarrollar una función que reciba una cola con prioridad y permita editar el par (k, v) a otro par (k’, v), de tal forma que todos los valores queden en la posición original. Para lograr esto, solo se deben actualizar las prioridades.
+La fecha de entrega del TPO se mantiene hasta el mismo viernes a última hora.
+Saludos
