@@ -1,0 +1,44 @@
+package org.example.model.ejercicios.TDACustoms;
+
+import org.example.model.definition.Queue;
+
+public class CyclicQueue implements Queue {
+
+    private BiNode first;
+
+    @Override
+    public void add(final int a) {
+        if (isEmpty()) {
+            first = new BiNode(a, null, null);
+            first.setNext(first);
+            first.setBefore(first);
+            return;
+        }
+        BiNode newNode = new BiNode(a, first.getBefore(), first);
+        first.getBefore().setNext(newNode);
+        first.setBefore(newNode);
+        first = newNode;
+    }
+
+    @Override
+    public void remove() {
+        if (isEmpty()) {
+            throw new RuntimeException("La cola está vacía.");
+        }
+        BiNode node = first.getBefore();
+        node.getBefore().setNext(node.getNext());
+        node.getNext().setBefore(node.getBefore());
+        node.setNext(null);
+        node.setBefore(null);
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return first == null;
+    }
+
+    @Override
+    public int getFirst() {
+        return first.getBefore().getValue();
+    }
+}

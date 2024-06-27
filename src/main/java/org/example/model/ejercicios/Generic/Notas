@@ -1,0 +1,4 @@
+Desarrolle Stack, Queue, QueueWithPriority y Set con programación genérica.
+Sobre estas estructuras:
+1. Desarrolle una función que reciba un Stack genérico e invierta sus elementos.
+2. Desarrolle una función que copie un Set genérico.

@@ -7,26 +7,26 @@ import org.example.model.normal.StaticStack;
 public class StackUtilities {
 
     public static Stack copy(Stack stack) {
-        Stack stack1 = new StaticStack();
-        Stack stack2 = new StaticStack();
+        Stack aux1 = new StaticStack();
+        Stack aux2 = new StaticStack();
 
         while (!stack.isEmpty()) {
-            stack1.add(stack.getTop());
-            stack2.add(stack.getTop());
+            aux1.add(stack.getTop());
+            aux2.add(stack.getTop());
             stack.remove();
         }
 
-        while (!stack1.isEmpty()) {
-            stack.add(stack1.getTop());
-            stack1.remove();
+        while (!aux1.isEmpty()) {
+            stack.add(aux1.getTop());
+            aux1.remove();
         }
 
-        while (!stack2.isEmpty()) {
-            stack1.add(stack2.getTop());
-            stack2.remove();
+        while (!aux2.isEmpty()) {
+            aux1.add(aux2.getTop());
+            aux2.remove();
         }
 
-        return stack1;
+        return aux1;
     }
 
     public static void print(Stack stack) {
@@ -76,11 +76,10 @@ public class StackUtilities {
 
     public static int size(Stack stack) {
         int count = 0;
-        Stack auxStack = copy(stack);
-
-        while (!auxStack.isEmpty()) {
+        Stack aux = copy(stack);
+        while (!aux.isEmpty()) {
             count++;
-            auxStack.remove();
+            aux.remove();
         }
         return count;
     }
