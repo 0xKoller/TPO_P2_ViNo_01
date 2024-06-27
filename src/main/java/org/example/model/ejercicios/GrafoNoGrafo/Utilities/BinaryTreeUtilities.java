@@ -3,7 +3,7 @@ package org.example.model.ejercicios.GrafoNoGrafo.Utilities;
 
 import org.example.model.ejercicios.GrafoNoGrafo.Interfaces.BinaryTree;
 
-public class BinaryTreeUtil {
+public class BinaryTreeUtilities {
 
     public static boolean esBalanceado(BinaryTree binaryTree) {
         if(binaryTree == null) {
@@ -162,6 +162,19 @@ public class BinaryTreeUtil {
             }
         }
         return isValidLeft && isValidRight;
+    }
+    public static int totalNodes(BinaryTree binaryTree) {
+        if (binaryTree == null) {
+            return 0;
+        }
+        return 1 + totalNodes(binaryTree.getLeft()) + totalNodes(binaryTree.getRight());
+    }
+
+    public static int sumNodes(BinaryTree binaryTree) {
+        if (binaryTree == null) {
+            return 0;
+        }
+        return binaryTree.getRoot() + sumNodes(binaryTree.getLeft()) + sumNodes(binaryTree.getRight());
     }
 
 }
