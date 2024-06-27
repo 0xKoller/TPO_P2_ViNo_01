@@ -1,4 +1,4 @@
-package org.example.model.ejercicios.Matrix;
+package org.example.model.ejercicios.Matrix.Interface;
 
 import org.example.model.definition.Queue;
 import org.example.model.definition.Stack;

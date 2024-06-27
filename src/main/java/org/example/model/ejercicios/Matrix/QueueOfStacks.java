@@ -1,6 +1,7 @@
 package org.example.model.ejercicios.Matrix;
 
 import org.example.model.definition.Queue;
+import org.example.model.ejercicios.Matrix.Interface.IQueueOfStacks;
 import org.example.model.normal.StaticQueue;
 import org.example.model.normal.StaticStack;
 import org.example.model.utilities.StackUtilities;

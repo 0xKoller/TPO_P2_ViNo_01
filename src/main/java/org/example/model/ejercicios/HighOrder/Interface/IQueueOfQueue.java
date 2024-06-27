@@ -1,4 +1,4 @@
-package org.example.model.ejercicios.HighOrder;
+package org.example.model.ejercicios.HighOrder.Interface;
 
 public interface IQueueOfQueue {
     void acolar(Queue queue);

@@ -1,6 +1,9 @@
 2.7. Ejercicio 7: Grafos
 Desarrollar una función que reciba un grafo dirigido, y devuelva un conjunto de grafos dirigidos tales que,
 cada uno de estos grafos, es fuertemente conexo. Explique que sucede si el grafo de entrada no es dirigido.
+
+
+
 Se cambia por:
 2.7. Ejercicio 7: Colas con prioridad
 Desarrollar una función que reciba una cola con prioridad y permita editar el par (k, v) a otro par (k’, v), de tal forma que todos los valores queden en la posición original. Para lograr esto, solo se deben actualizar las prioridades.

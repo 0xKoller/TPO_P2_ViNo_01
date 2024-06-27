@@ -1,5 +1,7 @@
 package org.example.model.ejercicios.HighOrder;
 
+import org.example.model.ejercicios.HighOrder.Interface.IQueueOfQueue;
+
 import java.util.ArrayList;
 import java.util.List;
 
