@@ -134,3 +134,17 @@ Osrc/main/java/org/example/model/ejercicios/Matrix/Interface/IQueueOfStacks.java
 Qsrc/main/java/org/example/model/ejercicios/HighOrder/Interface/IQueueOfQueue.java,f\8\f8a60c486caa51cb56c774fcd08afaf7e74f48cc
 ‚
 Rsrc/main/java/org/example/model/ejercicios/Matrix/Interface/QueueOfStacksUtil.java,3\b\3b70feac22e3c684b659832ff4c73afeb915f405
+{
+Ksrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/BinaryTreeUtil.java,3\5\35d07c0f0e202d998214bbcb620c674b054c7c77
+…
+Usrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/Utilities/BinaryTreeUtil.java,2\1\21d82add1aa4378fb3ad393bb650f6706e795067
+w
+Gsrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/BinaryTree.java,8\f\8fd438faa1fcce5a4b2c0621dd71466f6d794d19
+‚
+Rsrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/Interfaces/BinaryTree.java,f\b\fb8e8c8f59140b672c910c03abb957ffa0dea467
+ƒ
+Ssrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/Interfaces/IBinaryTree.java,1\6\16f9ba6a164db5d32afa9d8273656cceaeb7985b
+
+Osrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/DynamicIBinaryTree.java,5\6\5604011530aef249e7541f3585948c2422b8c45f
+~
+Nsrc/main/java/org/example/model/ejercicios/GrafoNoGrafo/DynamicBinaryTree.java,b\5\b572d0ff7942127b14d0e01789e1effdecf02403
