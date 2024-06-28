@@ -30,13 +30,21 @@ public class SuperSet implements ISuperSet {
 
     @Override
     public void remove(final int a) {
-        for (int i = 0; i < count; i++) {
-            if (array[i] == a) {
-                array[i] = array[count - 1];
-                count--;
-                return;
-            }
+        removeRecursive(a, 0);
+    }
+
+    private void removeRecursive(final int a, int index) {
+        if (index >= count) {
+            return;
         }
+
+        if (array[index] == a) {
+            array[index] = array[count - 1];
+            count--;
+            return;
+        }
+
+        removeRecursive(a, index + 1);
     }
 
     @Override

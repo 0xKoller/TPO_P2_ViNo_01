@@ -22,14 +22,18 @@ public class CyclicQueue implements Queue {
 
     @Override
     public void remove() {
-        if (isEmpty()) {
-            throw new RuntimeException("La cola está vacía.");
+
+    }
+
+    public void removeRecur(final BiNode node) {
+        if (node.getNext() == first) {
+            node.getBefore().setNext(node.getNext());
+            node.getNext().setBefore(node.getBefore());
+            node.setNext(null);
+            node.setBefore(null);
+        } else {
+            removeRecur(node.getNext());
         }
-        BiNode node = first.getBefore();
-        node.getBefore().setNext(node.getNext());
-        node.getNext().setBefore(node.getBefore());
-        node.setNext(null);
-        node.setBefore(null);
     }
 
     @Override

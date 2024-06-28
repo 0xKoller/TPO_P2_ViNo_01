@@ -33,10 +33,9 @@ public class RMDictionary implements IRMDictionary {
                 return;
             }
         }
-        array[count] = new int[MAX];
         array[count][0] = k;
-        array[count][2] = v;
         array[count][1] = 1;
+        array[count][2] = v;
         count++;
     }
 
