@@ -1,42 +1,47 @@
 package org.example.model.ejercicios.Matrix;
 
-import org.example.model.definition.Queue;
-import org.example.model.ejercicios.Matrix.Interface.IQueueOfStacks;
-import org.example.model.normal.StaticQueue;
-import org.example.model.normal.StaticStack;
-import org.example.model.utilities.StackUtilities;
+import org.example.model.definition.Stack;
+import org.example.model.ejercicios.Matrix.Interfaces.IQueueOfStacks;
 
-//Correcion realizada por Juan.
 public class QueueOfStacks implements IQueueOfStacks {
-    private StaticQueue queueOfStacks;
-    private int n; // Tamaño de cada pila y número de pilas
+    private static final int MAX = 10;
+    private final Stack[] arrayStack;
+    private int count;
 
-    public QueueOfStacks(int n) {
-        this.queueOfStacks = new StaticQueue();
-        this.n = n;
+    public QueueOfStacks() {
+        arrayStack = new Stack[MAX];
+        count = 0;
     }
-
-    @Override
-    public void addStack(StaticStack stack) {
-        if (StackUtilities.size(stack) != n) {
-            throw new RuntimeException("Cada pila debe tener exactamente " + n + " elementos.");
+    public void add(Stack stack) {
+        if (count == MAX) {
+            throw new RuntimeException("No se pueden agregar mas elementos.");
         }
-        queueOfStacks.add(stack);
+        arrayStack[count++] = stack;
 
     }
-
-    @Override
-    public Queue getQueueOfStacks() {
-        return queueOfStacks;
+    public void remove() {
+        if (this.isEmpty()) {
+            throw new RuntimeException("Cola vacía");
+        }
+        recursiveRemove(0);
+        count--;
     }
 
-    @Override
-    public int size() {
-        return queueOfStacks.size(); // Número de pilas en la cola
+    private void recursiveRemove(int index) {
+        if (index < count - 1) {
+            arrayStack[index] = arrayStack[index + 1];
+            recursiveRemove(index + 1);
+        }
     }
 
-    @Override
-    public int getN() {
-        return n;
+    public boolean isEmpty() {
+        return count == 0;
+    }
+
+    public Stack getFirst() {
+        if (this.isEmpty()) {
+            throw new RuntimeException("Cola vacía");
+        }
+        return arrayStack[0];
     }
 }

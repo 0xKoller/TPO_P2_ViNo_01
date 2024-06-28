@@ -1,25 +1,19 @@
 package org.example.model.ejercicios.HighOrder.Interface;
 
+import org.example.model.definition.Queue;
+import org.example.model.ejercicios.HighOrder.QueueOfQueue;
+
 public interface IQueueOfQueue {
-    void acolar(Queue queue);
 
-    /**
-     * Remueve y devuelve la primera cola de la QueueOfQueue.
-     * @return la primera cola de la QueueOfQueue
-     */
-    Queue desacolar();
+    void add(Queue queueOfQueue);
 
-    /**
-     * Devuelve true si la QueueOfQueue está vacía, false de lo contrario.
-     * @return true si la QueueOfQueue está vacía, false de lo contrario
-     */
+    void remove();
+
     boolean isEmpty();
 
-    /**
-     * Devuelve el tamaño de la QueueOfQueue.
-     * @return el tamaño de la QueueOfQueue
-     */
-    int size();
+    Queue getFirst();
 
     Queue flat();
+    QueueOfQueue concatenate(QueueOfQueue... queueOfQueues);
+    QueueOfQueue reverse();
 }
