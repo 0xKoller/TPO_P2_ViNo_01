@@ -80,4 +80,9 @@ public class StaticPriorityQueue implements PriorityQueue {
     public int getPriority() {
         return priorities[0];
     }
+
+    @Override
+    public int size() {
+        return 0;
+    }
 }

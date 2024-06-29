@@ -1,6 +1,5 @@
 package org.example.model.ejercicios.BuilderApproach;
 
-import org.example.model.definition.Set;
 import org.example.model.ejercicios.BuilderApproach.Interfaces.IStaticSetBuilder;
 
 import java.util.Arrays;

@@ -1,9 +1,5 @@
 package org.example.model.ejercicios.BuilderApproach;
 
-import static org.example.model.utilities.StackUtilities.print;
-import static org.example.model.utilities.SetUtilities.print;
-import static org.example.model.utilities.QueueUtilities.print;
-
 public class Run {
     public static void main(String[] args) {
         // Uso sin encadenar

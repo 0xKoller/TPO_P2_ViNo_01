@@ -16,14 +16,25 @@ public class Run {
         aux1.add(0);
         aux1.add(1);
         aux1.add(2);
+        System.out.println("Cola 1");
+        print(aux1);
+        System.out.println();
+        System.out.println("=======");
         Queue aux2 = new StaticQueue();
         aux2.add(10);
         aux2.add(11);
         aux2.add(12);
+        System.out.println("Cola 2");
+        print(aux2);
+        System.out.println();
+        System.out.println("=======");
         qoq.add(aux1);
         qoq.add(aux2);
         QueueOfQueue qoqAux = new QueueOfQueue();
-
+        System.out.println("Cola de colas");
+        printQoQ(qoq);
+        System.out.println();
+        System.out.println("=======");
         Queue aux3 = new StaticQueue();
         aux3.add(1111);
         aux3.add(2222);
@@ -35,6 +46,10 @@ public class Run {
         aux4.add(6666);
         qoqAux.add(aux3);
         qoqAux.add(aux4);
+        System.out.println("Cola de colas 2");
+        printQoQ(qoqAux);
+        System.out.println();
+        System.out.println("=======");
         QueueOfQueue resultConcat = new QueueOfQueue();
         QueueOfQueue concatenatedResult = resultConcat.concatenate(qoq, qoqAux);
         System.out.println("Concatenate");

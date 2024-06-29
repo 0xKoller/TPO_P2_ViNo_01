@@ -34,4 +34,22 @@ public class GenericStackUtilities<Element> {
         }
         return aux1;
     }
+
+    public String print(IGenericStack<Element> stack) {
+        GenericStack<Element> copyStack = copy(stack);
+        String result = "[";
+        boolean firstElement = true;
+
+        while (!copyStack.isEmpty()) {
+            if (!firstElement) {
+                result += ", ";
+            }
+            firstElement = false;
+            result += copyStack.getTop();
+            copyStack.remove();
+        }
+
+        result += "]";
+        return result;
+    }
 }

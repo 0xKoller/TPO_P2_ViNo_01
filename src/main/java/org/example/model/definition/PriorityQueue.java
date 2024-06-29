@@ -34,4 +34,5 @@ public interface PriorityQueue {
      */
     int getPriority();
 
+    int size();
 }
