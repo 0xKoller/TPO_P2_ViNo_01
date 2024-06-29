@@ -1,6 +1,5 @@
 package org.example.model.ejercicios.BuilderApproach.Interfaces;
 
-
 import org.example.model.ejercicios.BuilderApproach.StaticStack;
 
 public interface IStaticStackBuilder {
@@ -9,23 +8,22 @@ public interface IStaticStackBuilder {
      * Postcondicion: Apila (coloca en el tope) un valor.
      *
      * @param a valor a apilar.
-     * @return la pila después de agregar el valor.
+     * @return la pila actualizada después de agregar el valor.
      */
     StaticStack add(int a);
 
     /**
-     * Precondicion: La pila no esta vacia.
-     * Postcondicion: Desapila (quita el tope).
+     * Precondicion: La pila no está vacía.
+     * Postcondicion: Desapila (quita el tope) de la pila.
      */
     void remove();
 
-    /**
-     * @return <code>true</code> si la pila esta vacia, <code>false</code> en otro caso.
-     */
     boolean isEmpty();
 
     /**
-     * @return tope de la pila
+     * Postcondicion: Devuelve el valor en el tope de la pila.
+     *
+     * @return el valor en el tope de la pila.
      */
     int getTop();
 }

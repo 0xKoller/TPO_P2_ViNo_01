@@ -16,7 +16,7 @@ public class GenericStack<Element> implements IGenericStack<Element> {
     @Override
     public void add(final Element item) {
         if (count == MAX) {
-            throw new RuntimeException("La pila está llena, no es posible agregar nuevos elementos.");
+            throw new RuntimeException("Limite alcanzado.");
         }
         array[count++] = item;
     }
@@ -24,7 +24,7 @@ public class GenericStack<Element> implements IGenericStack<Element> {
     @Override
     public void remove() {
         if (count == 0) {
-            throw new RuntimeException("La pila se encuentra vacía.");
+            throw new RuntimeException("Pila vacía.");
         }
         count--;
     }
@@ -37,7 +37,7 @@ public class GenericStack<Element> implements IGenericStack<Element> {
     @Override
     public Element getTop() {
         if (count == 0) {
-            throw new RuntimeException("La pila se encuentra vacía.");
+            throw new RuntimeException("Pila vacía.");
         }
         return array[count - 1];
     }

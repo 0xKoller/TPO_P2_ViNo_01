@@ -53,6 +53,7 @@ public class PriorityQueueUtilities {
         boolean found = false;
         int index = 0;
 
+        // Recorre la cola original para encontrar y marcar el elemento a modificar
         while (!queue.isEmpty()) {
             final int val = queue.getFirst();
             final int prio = queue.getPriority();
@@ -77,6 +78,7 @@ public class PriorityQueueUtilities {
             return copy(newQueue);
         }
 
+        // Ajusta la prioridad del elemento encontrado
         for (int i = 0; i < newQueue.size(); i++) {
             final int val = newQueue.getFirst();
             final int prio = newQueue.getPriority();
@@ -91,5 +93,6 @@ public class PriorityQueueUtilities {
 
         return newQueue;
     }
+
 }
 

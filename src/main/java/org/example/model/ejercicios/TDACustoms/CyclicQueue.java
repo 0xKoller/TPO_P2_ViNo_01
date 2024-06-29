@@ -22,7 +22,7 @@ public class CyclicQueue implements Queue {
 
     @Override
     public void remove() {
-
+//        Se usa el recursive
     }
 
     public void removeRecur(final BiNode node) {

@@ -16,7 +16,7 @@ public class GenericQueue<Element> implements IGenericQueue<Element> {
     @Override
     public void add(final Element item) {
         if (count == MAX) {
-            throw new RuntimeException("La cola está llena, no es posible agregar nuevos elementos.");
+            throw new RuntimeException("Limite alcanzado.");
         }
         array[count++] = item;
     }
@@ -24,7 +24,7 @@ public class GenericQueue<Element> implements IGenericQueue<Element> {
     @Override
     public void remove() {
         if (count == 0) {
-            throw new RuntimeException("La cola se encuentra vacía.");
+            throw new RuntimeException("Cola vacía.");
         }
         for (int i = 0; i < count - 1; i++) {
             array[i] = array[i + 1];
@@ -40,7 +40,7 @@ public class GenericQueue<Element> implements IGenericQueue<Element> {
     @Override
     public Element getFirst() {
         if (count == 0) {
-            throw new RuntimeException("La cola se encuentra vacía.");
+            throw new RuntimeException("Cola vacía.");
         }
         return array[0];
     }

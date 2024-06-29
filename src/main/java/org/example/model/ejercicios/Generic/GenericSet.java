@@ -19,7 +19,7 @@ public class GenericSet<Element> implements IGenericSet<Element> {
     @Override
     public void add(final Element element) {
         if (count == MAX) {
-            throw new RuntimeException("Límite de elementos alcanzado.");
+            throw new RuntimeException("Límite alcanzado.");
         }
         for (int i = 0; i < count; i++) {
             if (array[i].equals(element)) {
@@ -53,7 +53,7 @@ public class GenericSet<Element> implements IGenericSet<Element> {
     @Override
     public Element choose() {
         if (count == 0) {
-            System.out.println("No se puede elegir un elemento del conjunto vacío.");
+            System.out.println("Conjunto vacío.");
             return null;
         }
         final int randomIndex = new Random().nextInt(count);
